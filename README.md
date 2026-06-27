@@ -2,20 +2,17 @@
 
 A pocket **defensive wireless monitor** for the **ESP32-C6 + 1.47″ LCD**. It passively watches the **2.4 GHz** air around you and flags nearby wireless attacks on its screen in real time — **detection only, it never attacks.**
 
+| Live radar | Threat detected — ALERT |
+|:---:|:---:|
+| ![radar](docs/screenshot-radar.jpg) | ![alert](docs/screenshot-alert.jpg) |
+
+*Waveshare ESP32-C6-LCD-1.47 prototype — live radar status (left) and a full-screen ALERT with attacker + target MAC (right).*
+
 > 📡 **Heads-up — 2.4 GHz band only.** The ESP32-C6 has **no 5 GHz radio**, so this radar does not see 5 GHz networks/attacks. That's fine for most threats (pwnagotchi is 2.4 GHz-only; most deauth targets 2.4 GHz) — but if you need 5 GHz, run this on a dual-band **ESP32-C5** instead. See [Hardware](#hardware).
 
 > Built to learn how the attacks work by building the thing that catches them. Offense → defense.
 
 ![status](https://img.shields.io/badge/status-working-brightgreen) ![platform](https://img.shields.io/badge/platform-ESP32--C6-blue) ![band](https://img.shields.io/badge/band-2.4GHz-yellow) ![license](https://img.shields.io/badge/license-MIT-lightgrey) ![purpose](https://img.shields.io/badge/purpose-educational%20%2F%20defensive-orange)
-
----
-
-## 📸 Screenshots
-
-| Live radar | Threat detected |
-|:---:|:---:|
-| ![radar](docs/screenshot-radar.jpg) | ![alert](docs/screenshot-alert.jpg) |
-| 🟢 / 🔴 status, per-protocol tiles, live `rx` | full-screen red ALERT with attacker + target MAC |
 
 ---
 
